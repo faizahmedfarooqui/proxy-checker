@@ -14,7 +14,9 @@ Checks Proxy (type - http, socks4, socks5 )
     ```
     
     a. $url : is a variable for url you would like to ping.
+    
     b. $config : is an optional array for the configuring the `timeout` and `check`.
+    
 3. Call the checkProxies function with the array of proxies in the format
 
     ```php
