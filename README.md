@@ -22,7 +22,7 @@ Checks Proxy (type - http, socks4, socks5 )
     ```php
 
     $proxies = [
-			'XXX.XXX.XXX.XXX:XXXX,username:password,Socks4',
+    		'XXX.XXX.XXX.XXX:XXXX,username:password,Socks4',
                 'XXX.XXX.XXX.XXX:XXXX,username:password,Socks5',
                 'XXX.XXX.XXX.XXX:XXXX'
 	];
