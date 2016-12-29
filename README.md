@@ -20,7 +20,15 @@ Checks Proxy (type - http, socks4, socks5 )
 3. Call the checkProxies function with the array of proxies in the format
 
     ```php
+
+    $proxies = [
+		'XXX.XXX.XXX.XXX:XXXX,username:password,Socks4',
+                'XXX.XXX.XXX.XXX:XXXX,username:password,Socks5',
+                'XXX.XXX.XXX.XXX:XXXX'
+	];
+
     $result = $proxyCheckObject->checkProxies($proxies);
+    
     echo "<pre>";
     print_r($result);
     echo "</pre>";
