@@ -10,7 +10,7 @@ Checks Proxy (type - http, socks4, socks5 )
                         'timeout'   => 100,
                         'check'     => ['get', 'post', 'cookie', 'referer', 'user_agent'],
                     ];
-        $proxyChecker = new ProxyChecker($url, $config);
+        $proxyCheckObject = new ProxyCheck($url, $config);
     ```
     
     a. $url : is a variable for url you would like to ping.
@@ -18,7 +18,7 @@ Checks Proxy (type - http, socks4, socks5 )
 3. Call the checkProxies function with the array of proxies in the format
 
     ```php
-    $result = $proxyChecker->checkProxies($proxies);
+    $result = $proxyCheckObject->checkProxies($proxies);
     echo "<pre>";
     print_r($result);
     echo "</pre>";
